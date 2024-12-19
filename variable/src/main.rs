@@ -1,10 +1,10 @@
 fn main() {
-    let x = 5;
-    let x = x +1;
-    {
-        let x = x * 2;
-        println!("The value of x in the inner scope is: {x}");
-    }
-
-    println!("The value of x is: {x}");
+    let _x = plus_one(5);
 }
+
+fn plus_one(_x: i32) -> i32 {
+    _x + 1
+}
+
+// this marks the end of 3.4
+
